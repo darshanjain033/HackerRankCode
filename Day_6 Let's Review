@@ -1,0 +1,13 @@
+T = int(input())
+for i in range(T):
+    T_string = input()
+    even_characters = ''
+    odd_characters = ''
+    
+    for j in range(len(T_string)):
+        if j % 2 == 0:
+            even_characters += T_string[j]
+        else:
+            odd_characters += T_string[j]
+            
+    print('{} {}'.format(even_characters,odd_characters))
